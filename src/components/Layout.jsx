@@ -65,12 +65,14 @@ export default function Layout() {
 
           {/* CTA */}
           <div className="hidden md:flex items-center gap-3">
-            <Link
-              to="/contact"
+            <a
+              href="https://ttmma.affise.com/v2/sign/in"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-5 py-2.5 bg-primary text-white text-sm font-semibold rounded-md hover:bg-primary/90 transition-colors"
             >
               Get Started
-            </Link>
+            </a>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -96,12 +98,14 @@ export default function Layout() {
                 {link.label}
               </Link>
             ))}
-            <Link
-              to="/contact"
+            <a
+              href="https://ttmma.affise.com/v2/sign/in"
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-3 px-5 py-3 bg-primary text-white text-sm font-semibold rounded-md text-center"
             >
               Get Started
-            </Link>
+            </a>
           </div>
         )}
       </header>
@@ -147,7 +151,7 @@ export default function Layout() {
             <div>
               <h4 className="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Platform</h4>
               <ul className="space-y-2">
-                <li><a href="http://ttmma.affise.com/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground text-sm hover:text-primary transition-colors">Register on Platform</a></li>
+                <li><a href="https://ttmma.affise.com/v2/sign/in" target="_blank" rel="noopener noreferrer" className="text-muted-foreground text-sm hover:text-primary transition-colors">Register on Platform</a></li>
                 <li><Link to="/advertisers" className="text-muted-foreground text-sm hover:text-primary transition-colors">CPI / CPA / CPL</Link></li>
                 <li><Link to="/publishers" className="text-muted-foreground text-sm hover:text-primary transition-colors">Monetize Traffic</Link></li>
               </ul>

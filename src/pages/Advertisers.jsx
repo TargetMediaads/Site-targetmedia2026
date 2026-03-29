@@ -153,7 +153,7 @@ export default function Advertisers() {
               <Link to="/contact" className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white font-bold rounded-md hover:bg-primary/90 transition-colors">
                 Contact Us <ArrowRight size={16} />
               </Link>
-              <a href="http://ttmma.affise.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-4 border border-border text-white font-bold rounded-md hover:border-primary/50 transition-colors">
+              <a href="https://ttmma.affise.com/v2/sign/in" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-4 border border-border text-white font-bold rounded-md hover:border-primary/50 transition-colors">
                 Register on Platform
               </a>
             </div>

@@ -172,7 +172,7 @@ export default function Publishers() {
                 <Link to="/contact" className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-semibold rounded-md hover:bg-primary/90 transition-colors text-sm">
                   Join Now <ArrowRight size={14} />
                 </Link>
-                <a href="http://ttmma.affise.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 border border-border text-white font-semibold rounded-md hover:border-primary/50 transition-colors text-sm">
+                <a href="https://ttmma.affise.com/v2/sign/in" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 border border-border text-white font-semibold rounded-md hover:border-primary/50 transition-colors text-sm">
                   Register on Platform
                 </a>
               </div>
