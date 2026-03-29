@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { base44 } from "@/api/base44Client";
 import useSEO from "../hooks/useSEO";
 import { Mail, ExternalLink, Send, CheckCircle } from "lucide-react";
 import { motion } from "framer-motion";
@@ -15,13 +16,16 @@ export default function Contact() {
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-      setSubmitted(true);
-    }, 1200);
+    await base44.integrations.Core.SendEmail({
+      to: "gil@targetmedia-ads.com",
+      subject: "new contact from site",
+      body: `Name: ${form.name}\nEmail: ${form.email}\nCompany: ${form.company}\nType: ${form.type}\n\nMessage:\n${form.message}`,
+    });
+    setLoading(false);
+    setSubmitted(true);
   };
 
   return (
