@@ -125,7 +125,7 @@ export default function Home() {
             >
               <div className="aspect-square rounded-2xl overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=800&q=80"
+                  src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80"
                   alt="Mobile Performance"
                   className="w-full h-full object-cover"
                 />
