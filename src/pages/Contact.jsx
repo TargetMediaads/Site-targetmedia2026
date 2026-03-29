@@ -1,8 +1,14 @@
 import { useState } from "react";
+import useSEO from "../hooks/useSEO";
 import { Mail, ExternalLink, Send, CheckCircle } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Contact() {
+  useSEO({
+    title: "Contact Us",
+    description: "Contact Target Media Ads — get in touch for advertiser and publisher collaborations. Email us at Team@targetmedia-ads.com or register directly on our performance platform.",
+    canonical: "/contact",
+  });
   const [form, setForm] = useState({ name: "", email: "", company: "", type: "advertiser", message: "" });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);

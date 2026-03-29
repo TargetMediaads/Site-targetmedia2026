@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import useSEO from "../hooks/useSEO";
 import { ArrowRight, CheckCircle, DollarSign, Globe, Smartphone, Zap } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -15,6 +16,11 @@ const traffic = [
 ];
 
 export default function Publishers() {
+  useSEO({
+    title: "Publishers — Monetize Your Mobile Traffic",
+    description: "Monetize your Android, iOS and WAP traffic with top-paying exclusive offers worldwide. Target Media Ads offers publishers direct campaigns, top payouts, and global reach across 150+ countries.",
+    canonical: "/publishers",
+  });
   return (
     <div>
       {/* Hero */}

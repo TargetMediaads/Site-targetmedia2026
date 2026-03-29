@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import useSEO from "../hooks/useSEO";
 
 const sections = [
   {
@@ -48,6 +49,11 @@ const sections = [
 ];
 
 export default function PrivacyPolicy() {
+  useSEO({
+    title: "Privacy Policy",
+    description: "Read the Target Media Ads privacy policy — how we collect, use, and protect personal data for advertisers, publishers and website visitors.",
+    canonical: "/privacy-policy",
+  });
   return (
     <div>
       {/* Hero */}

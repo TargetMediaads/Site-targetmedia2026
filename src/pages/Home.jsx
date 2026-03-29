@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import useSEO from "../hooks/useSEO";
 import { ArrowRight, Target, TrendingUp, Globe, Shield, Zap, BarChart3, Smartphone, Users } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -26,6 +27,11 @@ const fadeUp = {
 };
 
 export default function Home() {
+  useSEO({
+    title: "Mobile Performance Network",
+    description: "Target Media Ads is a Mobile Performance Network delivering worldwide quality traffic at scale. CPI, CPA, CPL campaigns for advertisers and publishers across 150+ countries. Pay only on performance.",
+    canonical: "/",
+  });
   return (
     <div>
       {/* Hero */}

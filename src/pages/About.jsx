@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import useSEO from "../hooks/useSEO";
 import { ArrowRight, Globe, Zap, Shield, TrendingUp } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -10,6 +11,11 @@ const values = [
 ];
 
 export default function About() {
+  useSEO({
+    title: "About Us",
+    description: "Learn about Target Media Ads — a Mobile Performance Network delivering worldwide quality traffic. Risk-free CPI, CPA, CPL campaigns across 150+ countries on Android & iOS.",
+    canonical: "/about",
+  });
   return (
     <div>
       {/* Hero */}

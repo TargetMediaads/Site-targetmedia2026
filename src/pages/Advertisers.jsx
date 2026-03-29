@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import useSEO from "../hooks/useSEO";
 import { ArrowRight, CheckCircle, Target, TrendingUp, Users, BarChart3 } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -21,6 +22,11 @@ const benefits = [
 ];
 
 export default function Advertisers() {
+  useSEO({
+    title: "Advertisers — Performance Mobile Advertising",
+    description: "Get quality users and pay only on performance. Target Media Ads offers CPI, CPA, CPL & CPV campaigns for mobile advertisers. Risk-free user acquisition across 150+ countries.",
+    canonical: "/advertisers",
+  });
   return (
     <div>
       {/* Hero */}
