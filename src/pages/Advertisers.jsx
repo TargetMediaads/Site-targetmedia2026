@@ -41,7 +41,7 @@ export default function Advertisers() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="max-w-3xl"
+            className="max-w-3xl pt-24 md:pt-28"
           >
             <div className="text-primary text-xs font-bold uppercase tracking-widest mb-4">Advertisers</div>
             <h1 className="text-5xl md:text-7xl font-black text-white leading-[0.95] tracking-tight mb-6">

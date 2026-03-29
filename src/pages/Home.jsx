@@ -44,7 +44,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent" />
 
         <div className="relative max-w-7xl mx-auto px-6 w-full">
-          <motion.div initial="hidden" animate="visible" className="max-w-3xl">
+          <motion.div initial="hidden" animate="visible" className="max-w-3xl pt-24 md:pt-28">
             <motion.div variants={fadeUp} custom={0} className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-primary/40 bg-primary/10 text-primary text-xs font-semibold uppercase tracking-widest mb-6">
               <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
               Mobile Performance Network
