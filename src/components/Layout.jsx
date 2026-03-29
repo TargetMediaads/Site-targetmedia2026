@@ -38,11 +38,19 @@ export default function Layout() {
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <img
-              src="https://media.base44.com/images/public/69c8f7a7f6b05b5709a82a5e/ef51146d8_TargetMediaLogoBlack.jpg"
-              alt="Target Media Ads"
-              className="h-10 w-auto"
-            />
+            <div className="relative w-9 h-9">
+              <div className="absolute inset-0 rounded-full border-2 border-primary flex items-center justify-center">
+                <div className="w-4 h-4 rounded-full border-2 border-primary flex items-center justify-center">
+                  <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                </div>
+              </div>
+              <div className="absolute top-1/2 left-0 right-0 h-px bg-primary -translate-y-px" />
+              <div className="absolute left-1/2 top-0 bottom-0 w-px bg-primary -translate-x-px" />
+            </div>
+            <div className="leading-none">
+              <div className="text-white font-black text-base tracking-tight">Target Media</div>
+              <div className="text-primary text-[10px] font-semibold tracking-widest uppercase">Ads</div>
+            </div>
           </Link>
 
           {/* Desktop Nav */}
@@ -116,12 +124,20 @@ export default function Layout() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
             <div className="md:col-span-2">
               <Link to="/" className="flex items-center gap-2 mb-4">
-              <img
-                src="https://media.base44.com/images/public/69c8f7a7f6b05b5709a82a5e/ef51146d8_TargetMediaLogoBlack.jpg"
-                alt="Target Media Ads"
-                className="h-8 w-auto"
-              />
-            </Link>
+                <div className="relative w-8 h-8">
+                  <div className="absolute inset-0 rounded-full border-2 border-primary flex items-center justify-center">
+                    <div className="w-3.5 h-3.5 rounded-full border-2 border-primary flex items-center justify-center">
+                      <div className="w-1 h-1 rounded-full bg-primary" />
+                    </div>
+                  </div>
+                  <div className="absolute top-1/2 left-0 right-0 h-px bg-primary -translate-y-px" />
+                  <div className="absolute left-1/2 top-0 bottom-0 w-px bg-primary -translate-x-px" />
+                </div>
+                <div className="leading-none">
+                  <div className="text-white font-black text-sm tracking-tight">Target Media Ads</div>
+                  <div className="text-primary text-[9px] font-semibold tracking-widest uppercase">Mobile Performance Network</div>
+                </div>
+              </Link>
               <p className="text-muted-foreground text-sm leading-relaxed max-w-sm">
                 A Mobile Performance Network delivering worldwide quality traffic on a large scale. Pay and get paid just on performance.
               </p>
