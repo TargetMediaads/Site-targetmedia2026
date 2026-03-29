@@ -86,26 +86,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Stats */}
-      <section className="py-20 md:py-28 bg-card border-b border-border">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((s, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1, duration: 0.5 }}
-                className="text-center"
-              >
-                <div className="text-4xl md:text-5xl font-black text-primary mb-2">{s.value}</div>
-                <div className="text-muted-foreground text-sm font-medium uppercase tracking-wider">{s.label}</div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Performance Network Section */}
       <section className="py-24 md:py-32">
