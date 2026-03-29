@@ -41,7 +41,7 @@ export default function Layout() {
           <Link to="/" className="flex items-center gap-2 group">
             <LogoIcon size={36} />
             <div className="leading-none">
-              <div className="text-white font-black text-xl tracking-tight">Target Media</div>
+              <div className="text-white font-black text-2xl tracking-tight">Target Media</div>
               <div className="text-primary text-xs font-semibold tracking-widest uppercase">Ads</div>
             </div>
           </Link>
