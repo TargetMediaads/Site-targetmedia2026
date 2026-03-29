@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation, Outlet } from "react-router-dom";
-import { Menu, X, Target } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import LogoIcon from "./LogoIcon";
 
 const navLinks = [
   { label: "Home", path: "/" },
@@ -38,7 +39,7 @@ export default function Layout() {
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <img src="https://media.base44.com/images/public/69c8f7a7f6b05b5709a82a5e/35cf20cad_Gemini_Generated_Image_7fjn197fjn197fjn.png" alt="Target Media Ads" className="w-9 h-9 object-contain" />
+            <LogoIcon size={36} />
             <div className="leading-none">
               <div className="text-white font-black text-base tracking-tight">Target Media</div>
               <div className="text-primary text-[10px] font-semibold tracking-widest uppercase">Ads</div>
@@ -116,7 +117,7 @@ export default function Layout() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
             <div className="md:col-span-2">
               <Link to="/" className="flex items-center gap-2 mb-4">
-                <img src="https://media.base44.com/images/public/69c8f7a7f6b05b5709a82a5e/35cf20cad_Gemini_Generated_Image_7fjn197fjn197fjn.png" alt="Target Media Ads" className="w-8 h-8 object-contain" />
+                <LogoIcon size={32} />
                 <div className="leading-none">
                   <div className="text-white font-black text-sm tracking-tight">Target Media Ads</div>
                   <div className="text-primary text-[9px] font-semibold tracking-widest uppercase">Mobile Performance Network</div>
