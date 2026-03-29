@@ -38,7 +38,7 @@ export default function Home() {
       <section className="relative min-h-screen flex items-end pb-24 md:pb-32 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url(https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1920&q=80)" }}
+          style={{ backgroundImage: "url(https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1920&q=80)" }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/90" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent" />
