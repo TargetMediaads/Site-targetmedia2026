@@ -80,18 +80,6 @@ export default function Contact() {
                     </a>
                   </div>
                 </div>
-
-                <div className="flex items-start gap-4 p-4 rounded-xl border border-border bg-card">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <ExternalLink size={18} className="text-primary" />
-                  </div>
-                  <div>
-                    <div className="text-white font-semibold text-sm mb-1">Register on Platform</div>
-                    <a href="http://ttmma.affise.com/" target="_blank" rel="noopener noreferrer" className="text-primary text-sm hover:underline break-all">
-                      ttmma.affise.com
-                    </a>
-                  </div>
-                </div>
               </div>
 
               <div className="p-6 rounded-xl border border-primary/20 bg-primary/5">
