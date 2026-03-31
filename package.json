@@ -13,7 +13,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "express": "^4.21.0",
     "@base44/sdk": "^0.8.24",
     "@base44/vite-plugin": "^1.0.6",
     "@hello-pangea/dnd": "^17.0.0",
@@ -54,6 +53,7 @@
     "cmdk": "^1.0.0",
     "date-fns": "^3.6.0",
     "embla-carousel-react": "^8.5.2",
+    "express": "^4.21.0",
     "framer-motion": "^11.16.4",
     "html2canvas": "^1.4.1",
     "input-otp": "^1.4.2",
