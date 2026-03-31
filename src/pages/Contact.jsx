@@ -19,13 +19,19 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    await base44.integrations.Core.SendEmail({
-      to: "gil@targetmedia-ads.com",
-      subject: "new contact from site",
-      body: `Name: ${form.name}\nEmail: ${form.email}\nCompany: ${form.company}\nType: ${form.type}\n\nMessage:\n${form.message}`,
-    });
-    setLoading(false);
-    setSubmitted(true);
+    try {
+      await base44.integrations.Core.SendEmail({
+        to: "Team@targetmedia-ads.com",
+        subject: "new contact from site",
+        body: `Name: ${form.name}\nEmail: ${form.email}\nCompany: ${form.company}\nType: ${form.type}\n\nMessage:\n${form.message}`,
+      });
+      setSubmitted(true);
+    } catch (error) {
+      console.error("Failed to send email:", error);
+      alert("There was an error sending your message. Please make sure your server environment variables are configured correctly.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
