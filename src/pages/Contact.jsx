@@ -20,10 +20,12 @@ export default function Contact() {
     e.preventDefault();
     setLoading(true);
     try {
-      await base44.integrations.Core.SendEmail({
-        to: "Team@targetmedia-ads.com",
-        subject: "new contact from site",
-        body: `Name: ${form.name}\nEmail: ${form.email}\nCompany: ${form.company}\nType: ${form.type}\n\nMessage:\n${form.message}`,
+      await base44.functions.invoke("sendContactEmail", {
+        name: form.name,
+        email: form.email,
+        company: form.company,
+        type: form.type,
+        message: form.message,
       });
       setSubmitted(true);
     } catch (error) {
