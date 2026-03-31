@@ -13,8 +13,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-
-    "http-proxy-middleware": "^3.0.0",
     "@base44/sdk": "^0.8.24",
     "@base44/vite-plugin": "^1.0.6",
     "@hello-pangea/dnd": "^17.0.0",
@@ -58,6 +56,7 @@
     "express": "^4.21.0",
     "framer-motion": "^11.16.4",
     "html2canvas": "^1.4.1",
+    "http-proxy-middleware": "^3.0.0",
     "input-otp": "^1.4.2",
     "jspdf": "^4.0.0",
     "lodash": "^4.17.21",
