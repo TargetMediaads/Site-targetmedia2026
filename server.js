@@ -28,11 +28,3 @@ app.get('*', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
-npm install
-
-git add.
-
-git commit - m "Fix Heroku H10 Crash by adding an Express server"
-
-git push
-
