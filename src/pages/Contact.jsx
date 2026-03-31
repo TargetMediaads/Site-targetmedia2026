@@ -27,6 +27,13 @@ export default function Contact() {
         type: form.type,
         message: form.message,
       });
+      await base44.functions.invoke('sendContactEmail', {
+        name: form.name,
+        email: form.email,
+        company: form.company,
+        type: form.type,
+        message: form.message,
+      });
       setSubmitted(true);
     } catch (error) {
       console.error("Failed to send email:", error);
